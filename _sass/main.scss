@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #fd5fae;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+ $primary: $pink;
+$primary-invert: $pink-invert;
+
+// Component Styles --------------------------------
+
+// Navbar
+
+$navbar-box-shadow-size: 0 3px 0 0;
+
+// 4. Import the rest of Bulma
+@import "../node_modules/bulma/bulma.sass";
+
+// Custom Styles
+.is-centered {
+  justify-content: center;
+}
+figure.avatar {
+  margin: 0 auto 2rem;
+}
+figure .is-rounded {
+  border-radius: 50%;
+}
+.button {
+  color: white;
+  text-transform: capitalize;
+}
+.button.twitter {
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+.button.linkedin-in {
+  background-color: #0077b5;
+  border-color: #0077b5;
+  color: white;
+}
+.button.github {
+  background-color: #333;
+  border-color: #333;
+}

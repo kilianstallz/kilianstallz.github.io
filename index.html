@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My first Bulma website</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="450" data-aos-delay="0">
+  <nav class="navbar is-transparent is-fixed-top has-shadow">
+    <div class="navbar-brand">
+      <a data-view="#home" class="navbar-item logo">Kilian Stallinger</a>
+      <div class="navbar-burger burger" role="button" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a data-view="#skills" href="#skills" class="navbar-item">Skills</a>
+        </div>
+        <div class="navbar-item">
+          <a data-view="#work" class="navbar-item">Work</a>
+        </div>
+        <div class="navbar-item">
+          <a data-view="#about" class="navbar-item">About</a>
+        </div>
+        <div class="navbar-item">
+          <a data-view="#contact" class="navbar-item">Contact</a>
+        </div>
+        <div id="cta" class="navbar-item is-hidden">
+          <a data-aos="fade-left" href="mailto:kp.stallinger@gmail.com" rel="noopener noreferrer" class="button is-rounded is-primary is-undefined"><span>Say
+              Hello <span style="font-size:undefinedrem" role="img" aria-label="emoji">👋</span></span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <section id="home" class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="subtitle">Hi!</h2>
+          <h1 class="title is-1">I'm Kilian</h1>
+          <h1 class="subtitle is-2">A Web Developer</h1>
+          <a href="mailto:kp.stallinger@gmail.com" class="button is-primary is-rounded is-medium">
+            <span>Say Hello
+              <!-- --> <span style="font-size:undefinedrem" role="img" aria-label="emoji">👋</span></span>
+          </a>
+        </div>
+      </div>
+      <!-- <svg aria-hidden="true" data-prefix="fas" data-icon="angle-double-down" class="svg-inline--fa fa-angle-double-down fa-w-10 fa-2x scroll-down-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-view="#skills"><path fill="currentColor" d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"></path></svg> -->
+    </section>
+  </header>
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="columns">
+        <div data-aos="fade-up" class="column aos-init aos-animate">
+          <h1 class="title">
+            <span class="shadow is-shadowed">Skills</span>
+          </h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, laborum ipsum. Corrupti illum sequi
+            aspernatur similique architecto quisquam ea mollitia?</p>
+        </div>
+        <div class="column aos-init aos-animate" data-aos="zoom-in-left">
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content has-text-centered">
+                  <span style="font-size:2.5rem" role="img" aria-label="emoji">👨‍🎤</span>
+                  <h2 class="is-2">Front-End Development</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rem sit facere nihil
+                    accusamus aut assumenda, maiores corporis reiciendis iusto.</p>
+                  <div class="section">
+                    <h4 class="is-4">Languages I Speak</h4>
+                    <div class="tags is-centered">
+                      <span class="tag">HTML</span>
+                      <span class="tag">Javascript</span>
+                      <span class="tag">CSS</span>
+                      <span class="tag">Pug</span>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <h4 class="is-4">Dev Tools</h4>
+                    <div class="tags is-centered">
+                      <span class="tag">VS Code</span>
+                      <span class="tag">Git</span>
+                      <span class="tag">NPM</span>
+                      <span class="tag">Zeplin</span>
+                      <span class="tag">Adobe XD</span>
+                      <span class="tag">Chrome</span>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <h4 class="is-4">
+                      Frameworks
+                    </h4>
+                    <div class="tags is-centered">
+                      <span class="tag">NodeJs</span>
+                      <span class="tag">VueJs</span>
+                      <span class="tag">Bulma</span>
+                      <span class="tag">Bootstrap</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="column aos-init aos-animate" data-aos="zoom-in-left">
+          <div class="box">
+            <article class="media">
+              <div class="media-content">
+                <div class="content has-text-centered">
+                  <span style="font-size:2.5rem" role="img" aria-label="emoji">👨‍💻</span>
+                  <h2 class="is-2">Back-End Development</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rem sit facere nihil
+                    accusamus aut assumenda, maiores corporis reiciendis iusto.</p>
+                  <div class="section">
+                    <h4 class="is-4">Languages I Speak</h4>
+                    <div class="tags is-centered">
+                      <span class="tag">Javascript</span>
+                      <span class="tag">C/C++</span>
+                      <span class="tag">Python</span>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <h4 class="is-4">Dev Tools</h4>
+                    <div class="tags is-centered">
+                      <span class="tag">Postman</span>
+                      <span class="tag">Git</span>
+                      <span class="tag">NPM</span>
+                      <span class="tag">MySQL</span>
+                      <span class="tag">MongoDB</span>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <h4 class="is-4">
+                      Frameworks
+                    </h4>
+                    <div class="tags is-centered">
+                      <span class="tag">NodeJs</span>
+                      <span class="tag">ExpressJs</span>
+                      <span class="tag">Firebase</span>
+                      <span class="tag">WebAssembly</span>
+                      <span class="tag">Django</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="work">
+    <div class="container is-fulld">
+      <div class="columns">
+        <div data-aos="fade-up" class="column aos-init aos-animate">
+          <h1 data-aos="zoom-in" class="title"><span class="shadow is-red">Latest Work</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, porro repudiandae! Quisquam adipisci eum
+            fugiat!</p>
+        </div>
+        <div class="column">
+          <h1 class="subtitle">More To Come</h1>
+        </div>
+        <div class="column">
+          <h1 class="subtitle">More To Come</h1>
+        </div>
+        <div class="column">
+          <h1 class="subtitle">More To Come</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section has-text-centered">
+    <div class="container" data-aos="fade-up">
+      <h1 class="title" data-aos="zoom-in">About Me</h1>
+      <figure class="image avatar is-128x128">
+        <div class="is-rounded gatsby-image-wrapper" style="position:relative;overflow:hidden">
+          <div style="width:100%;padding-bottom:100%"></div><img alt="avatar" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAlgCWAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcFBgj/xAAnEAABBAEDBAICAwAAAAAAAAABAgMEEQUABhIHEyExIkEUUQgyYf/EABgBAQADAQAAAAAAAAAAAAAAAAUDBAcI/8QAJREAAgECBgAHAAAAAAAAAAAAAQIAAwQFERIhUZETMTNBQtHw/9oADAMBAAIRAxEAPwDhOlX8l9yZHZue2bk8zImJyTI/BE9AkO/kL9NoUpQ+KifZuvdax+ofSHOYxnaeczmyY+3YbqVp7DRsvhAbKlONIHNJUe4s/IWFUONecLGbMzOxM3gpy4OVlTYMlsw2ZbQjtH4pJT2UJXZPx5L7gNj7PnVX3f1G3Nn9uY2RC2FisnBQ4lbzTsd1hYWG1ISG7c5KUgUeafuhZ0O92WOSNmJct7HxqLsoJYcA/vqeY9xiZOz+QlLUywX31O8I7NtjkbpPGwALoC/FV9aas24utGCdzMl5MjM4Z91Vvx48JDCS4BxvglXEGkpT4r+v7vTUAu2y9M9QjUw20nqVjeeamydxZKE6+pyNHkOttoPoBJIHj0TXi/eubxEFjHFf47fbCvqyQkfpIPof4PGmmjKWyKBOssDo0xhtsQozCg+XI379+ZWunXUCc3tpEd6Fj5ojurbbclRgtYTd1d+aJOmmmjKjsGO8xLGlC4lXAHyM/9k="
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 0; transition: opacity 0.5s ease 0.5s;">
+          <picture>
+            <source srcset="https://placehold.it/200"
+              sizes="(max-width: 800px) 100vw, 800px"><img alt="avatar" src="https://placehold.it/200"
+              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 0.5s ease 0s;"></picture>
+              <noscript>
+            <picture>
+              <source srcSet="https://placehold.it/200"
+                sizes="(max-width: 800px) 100vw, 800px" /><img src="https://placehold.it/200"
+                alt="avatar" style="position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center" /></picture>
+          </noscript>
+        </div>
+      </figure>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos animi neque quam odio nemo molestiae. Harum blanditiis provident, totam illum illo dignissimos, odio vitae vel autem dicta similique incidunt!</p>
+      <div class="section">
+        <a href="#" target="_blank" class="button is-primary is-rounded is-medium"><span>Resume<!-- --> <span style="font-size:undefinedrem" role="img" aria-label="emoji">👨🏻‍🎓</span></span></a>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section has-text-centered">
+    <div class="container" data-aos="fade-up">
+      <h1 class="title" data-aos="zoom-in">Let's Get Social</h1>
+      <div class="buttons is-centered">
+        <a href="https://twitter.com/kilianstallz" target="_blank" rel="noopener noreferrer" class="button twitter"><span>twitter</span></a>
+        <a href="https://www.linkedin.com/in/kilianstallz/" target="_blank" rel="noopener noreferrer" class="button linkedin-in"><span>linkedin</span></a>
+        <a href="https://github.com/kilianstallz" target="_blank" rel="noopener noreferrer" class="button github"><span>github</span></a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>This website was handcrafted with <span role="img" aria-label="emoji">❤️</span><br>by Kilian Stallinger<br>using <a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">Bulma</a></p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script type="text/javascript" src="lib/main.js"></script>
+</body>
+
+</html>
