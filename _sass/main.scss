@@ -34,6 +34,10 @@ $navbar-box-shadow-size: 0 3px 0 0;
 // 4. Import the rest of Bulma
 @import "../node_modules/bulma/bulma.sass";
 
+p {
+  font-family: 'Roboto', 'Story Sans', 'San Fransisco', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
 // Custom Styles
 .is-centered {
   justify-content: center;
@@ -52,6 +56,18 @@ figure .is-rounded {
   margin-left: 0;
   font-weight: 600;
   border-radius: 0;
+}
+
+header {
+  #background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+    filter: blur(6px);
+  }
 }
 
 .navbar-item {
@@ -84,9 +100,9 @@ a.navbar-item {
 }
 
 // Section Styles
-.section {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 #skills {
   .section {
@@ -107,8 +123,8 @@ a.navbar-item {
       background: #1da1f2;
       color: #fff;
     }
-    &.linkedin-in {
-      background: #0077b5;
+    &.dribbble {
+      background: #ea4c89;
       color: #fff;
     }
     &.github {

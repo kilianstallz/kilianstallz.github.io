@@ -14,6 +14,7 @@ $(document).ready(function() {
     if ($(this).scrollTop() > 200) {
        $('.navbar').removeClass('is-white').addClass('is-primary')
        $('.navbar-item').addClass('has-text-white')
+       $('.name').addClass('has-text-black')
     } else {
       $('.navbar').addClass('is-white').removeClass('is-primary')
       $('.navbar-item').removeClass('has-text-white')
