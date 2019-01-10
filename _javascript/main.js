@@ -8,6 +8,14 @@ $(document).ready(function() {
     $('.navbar-item').toggleClass('has-text-black')
   })
 
+  // Modal
+  $('.cta').click(function() {
+    $('#sayHello').addClass('is-active')
+  })
+  $('.modal-close').click(function() {
+    $('#sayHello').removeClass('is-active')
+  })
+
   // Scroll Function
   $(window).scroll(function(){
     // Check if px scrolled

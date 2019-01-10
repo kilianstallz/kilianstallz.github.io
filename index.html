@@ -146,11 +146,10 @@
               ><b>Contact</b></a
             >
           </div>
-          <div id="cta" class="navbar-item is-hidden">
+          <div id="ctaSayHello" class="navbar-item is-hidden">
             <a
+              href="#"
               data-aos="fade-left"
-              href="mailto:kp.stallinger@gmail.com"
-              rel="noopener noreferrer"
               class="button is-rounded is-primary is-undefined"
               ><span
                 >Say Hello
@@ -196,8 +195,7 @@
                   Front-End
                 </h1>
                 <a
-                  href="mailto:kp.stallinger@gmail.com"
-                  class="button is-primary is-rounded is-medium"
+                  class="button is-primary is-rounded is-medium cta"
                 >
                   <span
                     >Say Hello
@@ -220,6 +218,56 @@
         <!-- <svg aria-hidden="true" data-prefix="fas" data-icon="angle-double-down" class="svg-inline--fa fa-angle-double-down fa-w-10 fa-2x scroll-down-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-view="#skills"><path fill="currentColor" d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"></path></svg> -->
       </section>
     </header>
+    <!-- Hello  Modal -->
+    <div class="modal" id="sayHello">
+      <div class="modal-background"></div>
+      <div class="card" style="padding: 40px;">
+        <form style="margin: 10px;" name="contact" method="POST" data-netlify="true">
+        <div class="modal-content">
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Text input" required>
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="email" placeholder="Email input" required>
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Subject</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Subject" required>
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Message</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+          
+          <div class="field is-grouped">
+            <div class="control">
+              <input type="submit" class="button is-link"></input>
+            </div>
+            <div class="control">
+              <button class="button is-text">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </form>
+      </div>
+    </div>
     <section id="skills" style="margin-bottom: 5rem;" class="section">
       <div class="container">
         <div class="columns">
@@ -333,18 +381,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="section" id="design">
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-            <h1 class="title">Web Design</h1>
-        </div>
-        <div class="column has-text-centered">
-          
-        </div>
-      </div>
-    </div>
-  </section> -->
     <section class="section" style="background: #fd5fae;" id="hire">
       <div class="container">
         <div class="columns">
