@@ -34,6 +34,10 @@ $navbar-box-shadow-size: 0 3px 0 0;
 // 4. Import the rest of Bulma
 @import "../node_modules/bulma/bulma.sass";
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   font-family: 'Roboto', 'Story Sans', 'San Fransisco', 'Segoe UI', Helvetica, Arial, sans-serif;
 }
@@ -58,16 +62,23 @@ figure .is-rounded {
   border-radius: 0;
 }
 
-header {
-  #background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1000;
-    filter: blur(6px);
+.landing-hero .hero-body {
+  h1.title, h2.subtitle {
+    color: #fff;
   }
+}
+
+.landing-hero .hero-bg{
+  background-image: url(../assets/desk.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: blur(6px);
 }
 
 .navbar-item {
@@ -96,6 +107,10 @@ a.navbar-item {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+
+    img {
+      max-height: 180px;
+    }
   }
 }
 
