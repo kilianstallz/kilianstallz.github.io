@@ -24,7 +24,9 @@ gulp.task('webp_l', () => gulp.src('_img/l/*')
 
 gulp.task('webp_conv', () => gulp.src('assets/convert/*')
     .pipe(webp({
-        quality: 20, preset: 'photo', method: 6
+        size: 10000,
+        resize: {width: 2000, height: 1333},
+        quality: 5, preset: 'photo', method: 6
     }))
     .pipe(gulp.dest('assets'))
 )
