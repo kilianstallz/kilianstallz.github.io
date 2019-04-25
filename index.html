@@ -346,6 +346,13 @@
     </div>
   </footer>
 
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('lib/sw.js').then(reg => {
+        console.log('Service worker registered')
+      }).catch(err => console.log('No service worker available', err))
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" defer></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
