@@ -1,5 +1,5 @@
-const gulp = require('gulp')
-const webp = require('gulp-webp')
+const gulp = require('gulp');
+const webp = require('gulp-webp');
 
 gulp.task('webp_s', () => gulp.src('src/img/*')
     .pipe(webp({

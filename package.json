@@ -33,6 +33,7 @@
     "start": "npm-run-all --parallel css-watch js-watch"
   },
   "dependencies": {
-    "gulp-cli": "^2.2.0"
+    "gulp-cli": "^2.2.0",
+    "gulp-uglify": "^3.0.2"
   }
 }
