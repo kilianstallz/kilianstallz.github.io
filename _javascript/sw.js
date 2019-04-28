@@ -2,10 +2,10 @@ const version = 'v1::';
 const staticCacheName = `${version}static-resources`;
 
 const offlineData = [
-    '/css/main.css',
-    'index.html',
-    '/assets/*',
-    '/lib/main.js'
+    '../css/main.css',
+    '../index.html',
+    '../assets/*',
+    'main.js'
 ]
 
 self.addEventListener('install', (event) => {
